@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="enter_email_value">Enter Email</string>
+    <string name="Enter_your_password">Enter Password</string>
+    <string name="login_string">Login</string>
+    <string name="RegisterButtonString">Register</string>
+    <string name="Wlecome_string">Welcome to Risee</string>
+
+    <string name="onBordingText">\n\nWelcome to the team!
+        \n\nWe are thrilled to have you at our office. You’re going to be a valuable asset to our company, and we can’t wait to see all that you accomplish.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fabDescribe">Add new shoes</string>
+    <string name="buttonStart">Start!</string>
+    <string name="nameField">Enter shoe name here</string>
+    <string name="companyField">Enter compnay name</string>
+    <string name="sizeField">Enter the shoe size</string>
+    <string name="descriptionField">Description and features</string>
+    <string name="shoeName">Name</string>
+    <string name="shoeCompany">Company</string>
+    <string name="shoeSize">Size</string>
+    <string name="shoeDescription">Description</string>
+    <string name="buttonSave">Save</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="ok">ok</string>
+
+</resources>
