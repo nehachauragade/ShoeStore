@@ -1,9 +1,12 @@
 package com.udacity.shoestore
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -44,11 +47,24 @@ class ShoeDetailFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_shoe_detail, container, false)
+
+
+        fun hideKeyboard(context: Context, view: View) {
+            val imm: InputMethodManager =
+                context.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0)
+        }
+
         shoeListViewModel = ViewModelProvider(requireActivity()).get(ShoeListViewModel::class.java)
+
+        binding.shoeViewModel = shoeListViewModel
+        shoeListViewModel.implementNewShoe()
+
+
         binding.buttonSave.setOnClickListener(){v: View ->
+            shoeListViewModel.addShoe()
 
-
-
+            findNavController().navigateUp()
 
         }
         binding.buttonCancel.setOnClickListener { v: View ->
@@ -60,9 +76,6 @@ class ShoeDetailFragment : Fragment() {
                 findNavController().navigateUp()
             }
         })
-
-
-
         return binding.root
 
 

@@ -30,7 +30,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:text="@{shoe.name}"
+                android:text="Name :"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:text="@{shoe.size}"
+                android:text="Size :"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:text="@{shoe.company}"
+                android:text="Company :"
 
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -64,7 +64,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:text="@{shoe.description}"
+                android:text="Description :"
 
                 android:textSize="20sp"
                 android:textStyle="bold" />

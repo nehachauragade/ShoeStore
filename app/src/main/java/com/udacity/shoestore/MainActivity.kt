@@ -17,7 +17,10 @@ package com.udacity.shoestore
  */
 
 
+import android.content.Context
 import android.os.Bundle
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
@@ -27,6 +30,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
@@ -57,6 +61,8 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.MyNavHostFragment)
         return NavigationUI.navigateUp(navController,appBarConfiguration)
     }
+
+
 }
 
 

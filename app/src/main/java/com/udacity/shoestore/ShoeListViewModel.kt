@@ -24,8 +24,6 @@ class ShoeListViewModel :ViewModel(){
         get() = _detailReturnToList
 
     fun addShoe(){
-        //Toast.makeText(getActivity(),"Add Shoe",Toast.LENGTH_LONG).show()
-
         shoeItem?.let { shoeadd ->
                shoe.add(shoeadd)
                 returnToList()
@@ -33,14 +31,15 @@ class ShoeListViewModel :ViewModel(){
 
         }
 
-        
+
     }
     fun returnToList() {
         _detailReturnToList.value = true
     }
 
     fun implementNewShoe() {
-        shoeItem = Shoe("", "", "","")
+        shoeItem = Shoe("", "", "", "", emptyList())
+
     }
 
     fun finish() {
